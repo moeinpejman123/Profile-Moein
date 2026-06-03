@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Moein Portfolio</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +12,7 @@
 <!-- ⭐ BACKGROUND -->
 <canvas id="stars"></canvas>
 
-<!-- TOP BUTTON (scroll style) -->
+<!-- TOP BUTTON -->
 <button id="langBtn" onclick="toggleLang()">FA / EN</button>
 
 <!-- SCROLL CONTAINER -->
@@ -21,60 +20,100 @@
 
     <!-- 🇮🇷 SECTION -->
     <section class="page" id="faPage">
-
         <div class="card">
-
             <img src="avatar.jpg" class="avatar">
-
             <h1>معین پژمان</h1>
-  
             <p>
-           درباره من<br><br>
- سلام، من معین پژمان هستم، ۱۷ ساله از ایران. ساکن روستای بندر بستانه هستم و در حوزه صیادی در خلیج فارس فعالیت دارم 🌊<br><br>
-
-در حال حاضر در مسیر یادگیری برنامه‌نویسی وب هستم و روی JavaScript تمرکز دارم 💻<br>
-هدفم تبدیل شدن به یک توسعه‌دهنده حرفه‌ای (Full Stack Developer) و ساخت پروژه‌های واقعی و کاربردی است 🚀<br>
-
+            درباره من<br><br>
+سلام، من معین پژمان هستم، ۱۷ ساله از ایران و ساکن بندر بستانه 🌊<br>
+علاقه‌مند به برنامه‌نویسی وب و JavaScript 💻<br>
+هدفم تبدیل شدن به یک Full Stack Developer حرفه‌ای و ساخت پروژه‌های واقعی 🚀<br>
 مهارت‌ها:<br>
+HTML / CSS / JavaScript<br>
+UI مدرن و طراحی وب
+            </p>
 
-HTML / CSS / JavaScript (در حال یادگیری)<br><br>
-علاقه‌مند به طراحی وب و UI مدرن<br>
-یادگیری مداوم و ساخت پروژه‌های شخصی<br>
-
+            <!-- 🕹 بخش بازی‌ها -->
+            <h2>🎮 بازی‌های مورد علاقه</h2>
+            <p>🎭 FiveM — سرورهای Roleplay / زندگی در دنیای مجازی با شخصیت‌های مختلف</p>
+            <p>🔫 CS2 — تیراندازی رقابتی / بازی سریع و تمرکزی</p>
+            <p>🛡 R6 Siege — تاکتیکی / استراتژی و همکاری تیمی</p>
+            <p>🧱 Minecraft — ساخت و بقا / خلاقیت و ماجراجویی بی‌پایان</p>
         </div>
-
     </section>
 
     <!-- 🇬🇧 SECTION -->
     <section class="page" id="enPage">
-
         <div class="card">
-
             <img src="avatar.jpg" class="avatar">
-
             <h1>Moein Pejman</h1>
-
             <p>
             About Me<br><br>
-Hello, my name is Moein Pejman. I am 17 years old from Iran. I live in the village of Bandar Bastaneh and work in fishing activities in the Persian Gulf 🌊<br><br>
-
-Currently, I am learning web development with a focus on JavaScript 💻<br><br>
-My goal is to become a professional Full Stack Developer and build real, useful projects 🚀<br><br>
-
+Hello, I'm Moein Pejman, 17 years old from Iran 🌊<br>
+I'm learning web development focusing on JavaScript 💻<br>
+My goal: become a professional Full Stack Developer and build real projects 🚀<br>
 Skills:<br>
-
-HTML / CSS / JavaScript (learning stage)<br><br>
-Interested in modern web design and UI<br>
-Continuous learning and personal projects<br>
+HTML / CSS / JavaScript<br>
+Modern UI & Web Design
             </p>
 
+            <!-- 🕹 Games Section -->
+            <h2>🎮 Favorite Games</h2>
+            <p>🎭 FiveM — Roleplay servers / live a virtual life with different characters</p>
+            <p>🔫 CS2 — Competitive shooter / fast-paced and focus game</p>
+            <p>🛡 R6 Siege — Tactical / strategy and teamwork</p>
+            <p>🧱 Minecraft — Creative & survival / endless creativity and adventure</p>
         </div>
-
     </section>
 
 </div>
 
 <script src="script.js"></script>
+
+<style>
+/* CARD */
+.card {
+    width: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(20px);
+    text-align: center;
+}
+
+/* AVATAR */
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* H2 */
+.card h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #38bdf8;
+}
+
+/* GAME LIST AS SIMPLE TEXT */
+.card p {
+    font-size: 13px;
+    color: #eee;
+    line-height: 1.4;
+    text-align: left;
+    margin: 5px 0;
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+    .card {
+        width: 90%;
+    }
+}
+</style>
 
 </body>
 </html>
